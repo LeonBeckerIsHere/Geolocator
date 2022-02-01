@@ -82,7 +82,7 @@ class App extends Component {
       <div className="App">
         <div className='header'>
           <button id="upload_button" onClick={this.uploadJson}>Upload</button>
-          <input id="upload" ref="upload" type="file" accept=".json" onChange={(event)=>this.setJsonFileName(event)}/>
+          <input id="upload" type="file" accept=".json" onChange={(event)=>this.setJsonFileName(event)}/>
         </div>
         <MapComponent 
           data={this.state.jsonFeatureData}
