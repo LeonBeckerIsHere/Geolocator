@@ -1,0 +1,18 @@
+version: "3.9"
+services:
+  map_service:
+    build: ./map_service
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./map_sevice:/wsgi
+    environment:
+      FLASK_ENV: development
+  web:
+    build: ./map_app/web-app
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./map_app/web-app:/user/src/app
+    depends_on:
+      - map_service
