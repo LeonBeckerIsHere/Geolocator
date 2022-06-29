@@ -30,11 +30,3 @@ The link between flask and the react web app does work, but my main issue is I w
 
 The word document is in the root of the repo. Didn't understand #4, but the rest of the queries were easy to wrtie.
 
-
-```mermaid
-  graph TD;
-      A-->B;
-      A-->C;
-      B-->D;
-      C-->D;
-```
